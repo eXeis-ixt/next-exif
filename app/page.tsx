@@ -1,4 +1,4 @@
-import ExifCheckers from "./exif-checker";
+import ExifCheckers from "./ExifChecker";
 
 
 export default function Page() {
