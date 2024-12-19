@@ -13,7 +13,7 @@ import { Navbar } from './navbar'
 import Image from 'next/image'
 
 interface ExifData {
-  [key: string]: any
+  [key: string]: string | number | boolean;
 }
 
 export default function ExifChecker() {
@@ -74,7 +74,7 @@ export default function ExifChecker() {
     multiple: false
   })
 
-  const formatExifValue = (value: any): string => {
+  const formatExifValue = (value: unknown): string => {
     if (value === null || value === undefined) return 'N/A'
     if (value instanceof Array) return value.join(', ')
     if (typeof value === 'object') return JSON.stringify(value)
@@ -183,9 +183,10 @@ export default function ExifChecker() {
                   </CardHeader>
                   <CardContent>
                     <div className="relative aspect-square rounded-lg overflow-hidden bg-muted">
-                      <Image
+                      <img
                         src={imagePreview}
                         alt="Preview"
+                      
                         className="object-contain w-full h-full"
                       />
                     </div>
