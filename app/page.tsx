@@ -1,9 +1,9 @@
-import ExifCheckers from "./ExifChecker";
+import ImageDataChecker from "./ImageDataChecker";
 
 
 export default function Page() {
   return (<>
-  <ExifCheckers />
+  <ImageDataChecker />
   </>)
 }
 
