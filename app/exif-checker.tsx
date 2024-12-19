@@ -9,7 +9,7 @@ import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
 import {  Upload, Shield, Zap, Lock, ImageDownIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { Navbar } from './navbar'
+import { Navbar } from '../components/navbar'
 
 interface ExifData {
   [key: string]: string | number | boolean;
