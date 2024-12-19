@@ -10,7 +10,6 @@ import { Badge } from '@/components/ui/badge'
 import {  Upload, Shield, Zap, Lock, ImageDownIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Navbar } from './navbar'
-import Image from 'next/image'
 
 interface ExifData {
   [key: string]: string | number | boolean;
