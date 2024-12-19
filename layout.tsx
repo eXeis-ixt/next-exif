@@ -1,11 +1,4 @@
 import { ThemeProvider } from 'next-themes'
-import "./globals.css";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "EXIF Viwer",
-  description: "Inspect any kind of image | a product of Adons.",
-};
 
 export default function RootLayout({
   children,
