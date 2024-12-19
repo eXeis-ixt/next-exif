@@ -15,7 +15,7 @@ interface ExifData {
   [key: string]: string | number | boolean;
 }
 
-export default function ExifChecker() {
+export default function ExifCheckers() {
   const [exifData, setExifData] = useState<ExifData | null>(null)
   const [imagePreview, setImagePreview] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)

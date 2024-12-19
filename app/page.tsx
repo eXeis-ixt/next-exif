@@ -1,8 +1,9 @@
-import ExifChecker from './exif-checker';
+import ExifCheckers from "./exif-checker";
+
 
 export default function Page() {
   return (<>
-  <ExifChecker />
+  <ExifCheckers />
   </>)
 }
 
