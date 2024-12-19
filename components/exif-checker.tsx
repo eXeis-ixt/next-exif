@@ -7,9 +7,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
-import { Image, Upload, Shield, Zap, Lock } from 'lucide-react'
+import {  Upload, Shield, Zap, Lock, ImageDownIcon } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Navbar } from './navbar'
+import Image from 'next/image'
 
 interface ExifData {
   [key: string]: any
@@ -176,13 +177,13 @@ export default function ExifChecker() {
                 <Card className="bg-background/50 backdrop-blur">
                   <CardHeader>
                     <CardTitle className="text-base flex items-center gap-2">
-                      <Image className="w-4 h-4" />
+                      <ImageDownIcon className="w-4 h-4" />
                       Preview
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="relative aspect-square rounded-lg overflow-hidden bg-muted">
-                      <img
+                      <Image
                         src={imagePreview}
                         alt="Preview"
                         className="object-contain w-full h-full"
@@ -195,7 +196,7 @@ export default function ExifChecker() {
                 <Card className="bg-background/50 backdrop-blur">
                   <CardHeader>
                     <CardTitle className="text-base flex items-center gap-2">
-                      <Image className="w-4 h-4" />
+                      <ImageDownIcon className="w-4 h-4" />
                       EXIF Metadata
                     </CardTitle>
                   </CardHeader>
